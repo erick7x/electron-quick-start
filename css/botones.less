@@ -1,0 +1,57 @@
+
+@colorNormal: blue;
+@colorOk: green;
+@colorNo: red;
+
+
+.boton{
+background-color: @colorNormal;
+border: 1px solid darken(@colorNormal, 20%);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 16px;
+  color: lighten(@colorNormal, 60%);
+  font-weight: bold;
+
+}
+
+.boton_ok:extend(.boton){
+
+  background-color: green;
+
+}
+
+.botonRed:extend(.boton){
+  background-color: red;
+}
+
+.efectoHover(@color){
+
+  background-color: lighten(@color,20%);
+  box-shadow: 0px 0px darken(@color, 30%);
+  transition: 0.5s;
+
+  cursor: pointer;
+
+}
+
+.boton:hover{
+
+
+.efectoHover(@colorNormal);
+
+}
+
+
+
+.boton_ok:hover{
+.efectoHover(@colorOk)
+
+}
+
+
+.botonRed:hover{
+.efectoHover(@colorNo);
+
+}

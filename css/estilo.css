@@ -1,0 +1,97 @@
+.menu {
+  display: inline-block;
+  border: 1px solid black;
+  width: 97%;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  background-color: lightgray;
+  margin: 50px 0px 50px 0px;
+}
+.menu a {
+  background-color: #2486cd;
+  text-decoration: none;
+  border: 1px solid gray;
+  color: white;
+  padding: 10px;
+}
+.boton,
+.boton_ok,
+.botonRed {
+  background-color: blue;
+  border: 1px solid #000099;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.boton_ok {
+  background-color: green;
+}
+.botonRed {
+  background-color: red;
+}
+.boton:hover {
+  background-color: #6666ff;
+  -webkit-box-shadow: 0px 0px #000066;
+  box-shadow: 0px 0px #000066;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.boton_ok:hover {
+  background-color: #00e600;
+  -webkit-box-shadow: 0px 0px #000000;
+  box-shadow: 0px 0px #000000;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.botonRed:hover {
+  background-color: #ff6666;
+  -webkit-box-shadow: 0px 0px #660000;
+  box-shadow: 0px 0px #660000;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.caja,
+.caja-error {
+  border: 0.5px solid lightgray;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px #ffffff;
+  box-shadow: 0px 0px #ffffff;
+  margin: 3px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+.caja:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 20px skyblue;
+  box-shadow: 0px 0px 20px skyblue;
+}
+.caja-error {
+  border: 0.5px solid red;
+  -webkit-box-shadow: 0px 0px 10px #ff6666;
+  box-shadow: 0px 0px 10px #ff6666;
+}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: gray;
+}
+.info {
+  display: none;
+  border: 1px solid black;
+  margin: 50px;
+  padding: 20px;
+}
